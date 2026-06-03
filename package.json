@@ -1,0 +1,15 @@
+{
+  "name": "playwright-qa-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Playwright QA automation project using JavaScript.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
