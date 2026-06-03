@@ -1,11 +1,9 @@
 const { test, expect } = require('@playwright/test');
 
-const BASE_URL = 'https://www.groupon.com';
-
 test.describe('Groupon Homepage - Starter QA Tests', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto(BASE_URL);
+    await page.goto('/');
 
     try {
       await page.locator('text=Select your location').waitFor({ timeout: 5000 });
